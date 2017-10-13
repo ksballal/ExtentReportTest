@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="mypkg.TC1">
+        <methods>
+          <include name="M1"/>
+          <include name="checkFail"/>
+          <include name="checkHome"/>
+        </methods>
+      </class> <!-- mypkg.TC1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
