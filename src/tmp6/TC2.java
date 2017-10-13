@@ -1,4 +1,6 @@
-package mypkg;
+package tmp6;
+
+import mypkg.ExtentManager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +17,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class TC1 
+public class TC2 
 extends ExtentManager
 {
 	
@@ -64,7 +66,8 @@ extends ExtentManager
 	@AfterClass
 	public void tear()
 	{
-		//extent.endtest1(test1);//earlier version
+		//extent.endtest1(test1);
+		//earlier version
 		extent1.flush();
 		extent1.close();
 		driver.quit();

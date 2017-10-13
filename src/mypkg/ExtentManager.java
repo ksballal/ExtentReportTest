@@ -1,9 +1,7 @@
 package mypkg;
  
 import java.lang.*;
-import java.lang.String;
-//import org.apache.xpath.operations.String;
-
+//new comment
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -39,6 +37,7 @@ public class ExtentManager {
 	private static ExtentHtmlReporter getHtmlReporter() {
         htmlReporter = new ExtentHtmlReporter(filePath);
         htmlReporter.loadXMLConfig("./config.xml");
+        System.out.println("webdriver.chrome.driver" + "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
         return htmlReporter;
 }
 	
