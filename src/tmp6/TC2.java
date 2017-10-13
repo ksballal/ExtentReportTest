@@ -66,7 +66,8 @@ extends ExtentManager
 	@AfterClass
 	public void tear()
 	{
-		//extent.endtest1(test1);//earlier version
+		//extent.endtest1(test1);
+		//earlier version
 		extent1.flush();
 		extent1.close();
 		driver.quit();
